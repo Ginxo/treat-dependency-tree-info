@@ -1,7 +1,7 @@
 {
   "name": "treat-maven-dependency-plugin-log",
-  "version": "0.1.0",
-  "description": "it solves the problem of consuming maven-dependency-plugin log information from multiple modules",
+  "version": "0.2.0",
+  "description": "it solves the problem of consuming maven-dependency-plugin tree log information from multiple modules",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ginxo/treat-maven-dependency-plugin-log.git"
@@ -15,7 +15,9 @@
     "filter",
     "modules",
     "multiple",
-    "project"
+    "project",
+    "module",
+    "log"
   ],
   "main": "src/bin/cli.js",
   "author": "Enrique Mingorance Cano <emingora@redhat.com>",

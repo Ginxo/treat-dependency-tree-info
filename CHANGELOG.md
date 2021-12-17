@@ -1,5 +1,14 @@
 # Changelog
 
+# 0.2.0
+
+## Enhancements:
+
+- multiple filters
+- -e, --exclude arguments to be able to filter by exclusion
+- skip writing output file argument
+- -p to print module list
+
 # 0.1.0
 
 ## Enhancements:
