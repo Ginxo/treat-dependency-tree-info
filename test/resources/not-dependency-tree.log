@@ -1,0 +1,435 @@
+2021-12-15T15:39:01.6600801Z [INFO] Error stacktraces are turned on.
+2021-12-15T15:39:01.6707850Z [INFO] Scanning for projects...
+2021-12-15T15:39:10.6458216Z [INFO] ------------------------------------------------------------------------
+2021-12-15T15:39:10.6459797Z [INFO] Reactor Build Order:
+2021-12-15T15:39:10.6460579Z [INFO] 
+2021-12-15T15:39:10.6572621Z [INFO] KIE (Drools, jBPM, OptaPlanner) user BOM parent                    [pom]
+2021-12-15T15:39:10.6573707Z [INFO] KIE :: Build tools                                                 [jar]
+2021-12-15T15:39:10.6574385Z [INFO] KIE BOM (Bill Of Materials)                                        [pom]
+2021-12-15T15:39:10.6575062Z [INFO] KIE Soup BOM (Bill Of Materials)                                   [pom]
+2021-12-15T15:39:10.6575835Z [INFO] UberFire BOM (Bill Of Materials)                                   [pom]
+2021-12-15T15:39:10.6576625Z [INFO] Drools BOM (Bill Of Materials)                                     [pom]
+2021-12-15T15:39:10.6577316Z [INFO] OptaPlanner BOM (Bill Of Materials)                                [pom]
+2021-12-15T15:39:10.6578050Z [INFO] jBPM BOM (Bill Of Materials)                                       [pom]
+2021-12-15T15:39:10.6578805Z [INFO] UberFire Extensions BOM (Bill Of Materials)                        [pom]
+2021-12-15T15:39:10.6579544Z [INFO] Kie DMN BOM (Bill Of Materials)                                    [pom]
+2021-12-15T15:39:10.6580253Z [INFO] Kie PMML BOM (Bill Of Materials)                                   [pom]
+2021-12-15T15:39:10.6580971Z [INFO] Narayana Integration BOM (Bill Of Materials)                       [pom]
+2021-12-15T15:39:10.6581791Z [INFO] KIE (Drools, jBPM, OptaPlanner) Platform BOM                       [pom]
+2021-12-15T15:39:10.6615047Z [INFO] KIE (Drools, jBPM, OptaPlanner) parent                             [pom]
+2021-12-15T15:39:10.6782805Z [INFO] 
+2021-12-15T15:39:10.6784526Z [INFO] --------------------< org.kie:kie-user-bom-parent >---------------------
+2021-12-15T15:39:10.6785944Z [INFO] Building KIE (Drools, jBPM, OptaPlanner) user BOM parent 7.64.0-SNAPSHOT [1/14]
+2021-12-15T15:39:10.6787146Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:11.2856701Z [INFO] 
+2021-12-15T15:39:11.2858843Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-user-bom-parent ---
+2021-12-15T15:39:12.0691765Z [INFO] 
+2021-12-15T15:39:12.0694127Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-user-bom-parent ---
+2021-12-15T15:39:13.2230600Z [INFO] 
+2021-12-15T15:39:13.2267496Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-user-bom-parent ---
+2021-12-15T15:39:13.2282806Z [INFO] 
+2021-12-15T15:39:13.2287240Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-user-bom-parent ---
+2021-12-15T15:39:16.5861987Z [INFO] Executing: /bin/sh -c cd '/home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-user-bom-parent' && 'git' 'rev-parse' '--verify' 'HEAD'
+2021-12-15T15:39:16.5864966Z [INFO] Working directory: /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-user-bom-parent
+2021-12-15T15:39:16.6203184Z [INFO] Storing buildNumber: 24725541448ce54a529b0533a94b41025480a604 at timestamp: 1639582756562
+2021-12-15T15:39:16.6339803Z [INFO] Storing buildScmBranch: RHPAM-4012
+2021-12-15T15:39:16.6340886Z [INFO] 
+2021-12-15T15:39:16.6342385Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-user-bom-parent ---
+2021-12-15T15:39:17.3346895Z [INFO] 
+2021-12-15T15:39:17.3352240Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-user-bom-parent ---
+2021-12-15T15:39:17.5632864Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-user-bom-parent/pom.xml to /home/runner/.m2/repository/org/kie/kie-user-bom-parent/7.64.0-SNAPSHOT/kie-user-bom-parent-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:17.5702271Z [INFO] 
+2021-12-15T15:39:17.5707595Z [INFO] ----------------------< org.kie:kie-build-tools >-----------------------
+2021-12-15T15:39:17.5713651Z [INFO] Building KIE :: Build tools 7.64.0-SNAPSHOT                       [2/14]
+2021-12-15T15:39:17.5718620Z [INFO] --------------------------------[ jar ]---------------------------------
+2021-12-15T15:39:18.2656607Z [INFO] 
+2021-12-15T15:39:18.2658582Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-build-tools ---
+2021-12-15T15:39:18.2676017Z [INFO] 
+2021-12-15T15:39:18.2681290Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-build-tools ---
+2021-12-15T15:39:18.2714400Z [INFO] 
+2021-12-15T15:39:18.2718888Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-build-tools ---
+2021-12-15T15:39:18.2725729Z [INFO] 
+2021-12-15T15:39:18.2730509Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-build-tools ---
+2021-12-15T15:39:18.2743365Z [INFO] 
+2021-12-15T15:39:18.2748262Z [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ kie-build-tools ---
+2021-12-15T15:39:18.6836730Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15T15:39:18.6885553Z [INFO] Copying 1 resource
+2021-12-15T15:39:18.6976855Z [INFO] 
+2021-12-15T15:39:18.7056488Z [INFO] --- maven-compiler-plugin:3.8.0-jboss-2:compile (default-compile) @ kie-build-tools ---
+2021-12-15T15:39:19.2022256Z [INFO] No sources to compile
+2021-12-15T15:39:19.2032474Z [INFO] 
+2021-12-15T15:39:19.2097219Z [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ kie-build-tools ---
+2021-12-15T15:39:19.2098867Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15T15:39:19.2104930Z [INFO] skip non existing resourceDirectory /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-build-tools/src/test/resources
+2021-12-15T15:39:19.2114529Z [INFO] 
+2021-12-15T15:39:19.2174372Z [INFO] --- maven-compiler-plugin:3.8.0-jboss-2:testCompile (default-testCompile) @ kie-build-tools ---
+2021-12-15T15:39:19.2175730Z [INFO] No sources to compile
+2021-12-15T15:39:19.2176361Z [INFO] 
+2021-12-15T15:39:19.2177470Z [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ kie-build-tools ---
+2021-12-15T15:39:19.8003257Z [INFO] No tests to run.
+2021-12-15T15:39:19.8165510Z [INFO] 
+2021-12-15T15:39:19.8222274Z [INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ kie-build-tools ---
+2021-12-15T15:39:20.2450295Z [INFO] Building jar: /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-build-tools/target/kie-build-tools-7.64.0-SNAPSHOT.jar
+2021-12-15T15:39:20.2778555Z [INFO] 
+2021-12-15T15:39:20.2780756Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-build-tools ---
+2021-12-15T15:39:20.3152345Z [INFO] Building jar: /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-build-tools/target/kie-build-tools-7.64.0-SNAPSHOT-sources.jar
+2021-12-15T15:39:20.3754616Z [INFO] 
+2021-12-15T15:39:20.3802076Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-build-tools ---
+2021-12-15T15:39:20.3984630Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-build-tools/target/kie-build-tools-7.64.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/kie/kie-build-tools/7.64.0-SNAPSHOT/kie-build-tools-7.64.0-SNAPSHOT.jar
+2021-12-15T15:39:20.4037847Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-build-tools/pom.xml to /home/runner/.m2/repository/org/kie/kie-build-tools/7.64.0-SNAPSHOT/kie-build-tools-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.4115050Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-build-tools/target/kie-build-tools-7.64.0-SNAPSHOT-sources.jar to /home/runner/.m2/repository/org/kie/kie-build-tools/7.64.0-SNAPSHOT/kie-build-tools-7.64.0-SNAPSHOT-sources.jar
+2021-12-15T15:39:20.4117802Z [INFO] 
+2021-12-15T15:39:20.4151039Z [INFO] --------------------------< org.kie:kie-bom >---------------------------
+2021-12-15T15:39:20.4228292Z [INFO] Building KIE BOM (Bill Of Materials) 7.64.0-SNAPSHOT              [3/14]
+2021-12-15T15:39:20.4229300Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.4229835Z [INFO] 
+2021-12-15T15:39:20.4230653Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-bom ---
+2021-12-15T15:39:20.4231268Z [INFO] 
+2021-12-15T15:39:20.4232233Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-bom ---
+2021-12-15T15:39:20.4232988Z [INFO] 
+2021-12-15T15:39:20.4272276Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-bom ---
+2021-12-15T15:39:20.4281466Z [INFO] 
+2021-12-15T15:39:20.4317355Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-bom ---
+2021-12-15T15:39:20.4343135Z [INFO] 
+2021-12-15T15:39:20.4373910Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-bom ---
+2021-12-15T15:39:20.4374635Z [INFO] 
+2021-12-15T15:39:20.4375509Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-bom ---
+2021-12-15T15:39:20.4438460Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-bom/pom.xml to /home/runner/.m2/repository/org/kie/kie-bom/7.64.0-SNAPSHOT/kie-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.4439959Z [INFO] 
+2021-12-15T15:39:20.4441046Z [INFO] ---------------------< org.kie.soup:kie-soup-bom >----------------------
+2021-12-15T15:39:20.4452684Z [INFO] Building KIE Soup BOM (Bill Of Materials) 7.64.0-SNAPSHOT         [4/14]
+2021-12-15T15:39:20.4516768Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.4517773Z [INFO] 
+2021-12-15T15:39:20.4518955Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-soup-bom ---
+2021-12-15T15:39:20.4519871Z [INFO] 
+2021-12-15T15:39:20.4521151Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-soup-bom ---
+2021-12-15T15:39:20.4522190Z [INFO] 
+2021-12-15T15:39:20.4545672Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-soup-bom ---
+2021-12-15T15:39:20.4557067Z [INFO] 
+2021-12-15T15:39:20.4596688Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-soup-bom ---
+2021-12-15T15:39:20.4609505Z [INFO] 
+2021-12-15T15:39:20.4650610Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-soup-bom ---
+2021-12-15T15:39:20.4651925Z [INFO] 
+2021-12-15T15:39:20.4653200Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-soup-bom ---
+2021-12-15T15:39:20.4718461Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-soup-bom/pom.xml to /home/runner/.m2/repository/org/kie/soup/kie-soup-bom/7.64.0-SNAPSHOT/kie-soup-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.4725451Z [INFO] 
+2021-12-15T15:39:20.4727012Z [INFO] ---------------------< org.uberfire:uberfire-bom >----------------------
+2021-12-15T15:39:20.4728305Z [INFO] Building UberFire BOM (Bill Of Materials) 7.64.0-SNAPSHOT         [5/14]
+2021-12-15T15:39:20.4752251Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.4772716Z [INFO] 
+2021-12-15T15:39:20.4813952Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ uberfire-bom ---
+2021-12-15T15:39:20.4815019Z [INFO] 
+2021-12-15T15:39:20.4853882Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ uberfire-bom ---
+2021-12-15T15:39:20.4855104Z [INFO] 
+2021-12-15T15:39:20.4856479Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ uberfire-bom ---
+2021-12-15T15:39:20.4857778Z [INFO] 
+2021-12-15T15:39:20.4858944Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ uberfire-bom ---
+2021-12-15T15:39:20.4860084Z [INFO] 
+2021-12-15T15:39:20.4873985Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ uberfire-bom ---
+2021-12-15T15:39:20.4888277Z [INFO] 
+2021-12-15T15:39:20.5005003Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ uberfire-bom ---
+2021-12-15T15:39:20.5013405Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/uberfire-bom/pom.xml to /home/runner/.m2/repository/org/uberfire/uberfire-bom/7.64.0-SNAPSHOT/uberfire-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.5033650Z [INFO] 
+2021-12-15T15:39:20.5160011Z [INFO] -----------------------< org.drools:drools-bom >------------------------
+2021-12-15T15:39:20.5161641Z [INFO] Building Drools BOM (Bill Of Materials) 7.64.0-SNAPSHOT           [6/14]
+2021-12-15T15:39:20.5162903Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.5163700Z [INFO] 
+2021-12-15T15:39:20.5180227Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ drools-bom ---
+2021-12-15T15:39:20.5190835Z [INFO] 
+2021-12-15T15:39:20.5312795Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ drools-bom ---
+2021-12-15T15:39:20.5313938Z [INFO] 
+2021-12-15T15:39:20.5315194Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ drools-bom ---
+2021-12-15T15:39:20.5316186Z [INFO] 
+2021-12-15T15:39:20.5317309Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ drools-bom ---
+2021-12-15T15:39:20.5318252Z [INFO] 
+2021-12-15T15:39:20.5337314Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ drools-bom ---
+2021-12-15T15:39:20.5350867Z [INFO] 
+2021-12-15T15:39:20.5407528Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ drools-bom ---
+2021-12-15T15:39:20.5494070Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/drools-bom/pom.xml to /home/runner/.m2/repository/org/drools/drools-bom/7.64.0-SNAPSHOT/drools-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.5495893Z [INFO] 
+2021-12-15T15:39:20.5496958Z [INFO] ------------------< org.optaplanner:optaplanner-bom >-------------------
+2021-12-15T15:39:20.5498243Z [INFO] Building OptaPlanner BOM (Bill Of Materials) 7.64.0-SNAPSHOT      [7/14]
+2021-12-15T15:39:20.5548395Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.5549062Z [INFO] 
+2021-12-15T15:39:20.5549945Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ optaplanner-bom ---
+2021-12-15T15:39:20.5550655Z [INFO] 
+2021-12-15T15:39:20.5573785Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ optaplanner-bom ---
+2021-12-15T15:39:20.5583127Z [INFO] 
+2021-12-15T15:39:20.5612885Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ optaplanner-bom ---
+2021-12-15T15:39:20.5614153Z [INFO] 
+2021-12-15T15:39:20.5615458Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ optaplanner-bom ---
+2021-12-15T15:39:20.5620372Z [INFO] 
+2021-12-15T15:39:20.5665471Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ optaplanner-bom ---
+2021-12-15T15:39:20.5666522Z [INFO] 
+2021-12-15T15:39:20.5667686Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ optaplanner-bom ---
+2021-12-15T15:39:20.5697906Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/optaplanner-bom/pom.xml to /home/runner/.m2/repository/org/optaplanner/optaplanner-bom/7.64.0-SNAPSHOT/optaplanner-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.5711176Z [INFO] 
+2021-12-15T15:39:20.5732440Z [INFO] -------------------------< org.jbpm:jbpm-bom >--------------------------
+2021-12-15T15:39:20.5765376Z [INFO] Building jBPM BOM (Bill Of Materials) 7.64.0-SNAPSHOT             [8/14]
+2021-12-15T15:39:20.5766926Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.5767685Z [INFO] 
+2021-12-15T15:39:20.5768732Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ jbpm-bom ---
+2021-12-15T15:39:20.5769558Z [INFO] 
+2021-12-15T15:39:20.5776097Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ jbpm-bom ---
+2021-12-15T15:39:20.5835365Z [INFO] 
+2021-12-15T15:39:20.5887960Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ jbpm-bom ---
+2021-12-15T15:39:20.5888816Z [INFO] 
+2021-12-15T15:39:20.5889684Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ jbpm-bom ---
+2021-12-15T15:39:20.5890394Z [INFO] 
+2021-12-15T15:39:20.5891341Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ jbpm-bom ---
+2021-12-15T15:39:20.5898891Z [INFO] 
+2021-12-15T15:39:20.5900450Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ jbpm-bom ---
+2021-12-15T15:39:20.5961643Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/jbpm-bom/pom.xml to /home/runner/.m2/repository/org/jbpm/jbpm-bom/7.64.0-SNAPSHOT/jbpm-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.5974884Z [INFO] 
+2021-12-15T15:39:20.5998459Z [INFO] ------------< org.kie.uberfire:kie-uberfire-extensions-bom >------------
+2021-12-15T15:39:20.6035711Z [INFO] Building UberFire Extensions BOM (Bill Of Materials) 7.64.0-SNAPSHOT [9/14]
+2021-12-15T15:39:20.6037033Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.6037797Z [INFO] 
+2021-12-15T15:39:20.6039132Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-uberfire-extensions-bom ---
+2021-12-15T15:39:20.6040232Z [INFO] 
+2021-12-15T15:39:20.6043173Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-uberfire-extensions-bom ---
+2021-12-15T15:39:20.6052398Z [INFO] 
+2021-12-15T15:39:20.6084157Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-uberfire-extensions-bom ---
+2021-12-15T15:39:20.6089462Z [INFO] 
+2021-12-15T15:39:20.6130875Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-uberfire-extensions-bom ---
+2021-12-15T15:39:20.6132525Z [INFO] 
+2021-12-15T15:39:20.6133956Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-uberfire-extensions-bom ---
+2021-12-15T15:39:20.6135099Z [INFO] 
+2021-12-15T15:39:20.6136570Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-uberfire-extensions-bom ---
+2021-12-15T15:39:20.6263786Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-uberfire-extensions-bom/pom.xml to /home/runner/.m2/repository/org/kie/uberfire/kie-uberfire-extensions-bom/7.64.0-SNAPSHOT/kie-uberfire-extensions-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.6266362Z [INFO] 
+2021-12-15T15:39:20.6275240Z [INFO] ------------------------< org.kie:kie-dmn-bom >-------------------------
+2021-12-15T15:39:20.6291882Z [INFO] Building Kie DMN BOM (Bill Of Materials) 7.64.0-SNAPSHOT         [10/14]
+2021-12-15T15:39:20.6293154Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.6293900Z [INFO] 
+2021-12-15T15:39:20.6294977Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-dmn-bom ---
+2021-12-15T15:39:20.6296974Z [INFO] 
+2021-12-15T15:39:20.6298193Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-dmn-bom ---
+2021-12-15T15:39:20.6302994Z [INFO] 
+2021-12-15T15:39:20.6328168Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-dmn-bom ---
+2021-12-15T15:39:20.6333148Z [INFO] 
+2021-12-15T15:39:20.6352099Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-dmn-bom ---
+2021-12-15T15:39:20.6359397Z [INFO] 
+2021-12-15T15:39:20.6385289Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-dmn-bom ---
+2021-12-15T15:39:20.6393393Z [INFO] 
+2021-12-15T15:39:20.6412633Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-dmn-bom ---
+2021-12-15T15:39:20.6469344Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-dmn-bom/pom.xml to /home/runner/.m2/repository/org/kie/kie-dmn-bom/7.64.0-SNAPSHOT/kie-dmn-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.6471217Z [INFO] 
+2021-12-15T15:39:20.6472277Z [INFO] ------------------------< org.kie:kie-pmml-bom >------------------------
+2021-12-15T15:39:20.6502910Z [INFO] Building Kie PMML BOM (Bill Of Materials) 7.64.0-SNAPSHOT        [11/14]
+2021-12-15T15:39:20.6504389Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.6505192Z [INFO] 
+2021-12-15T15:39:20.6506351Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-pmml-bom ---
+2021-12-15T15:39:20.6507278Z [INFO] 
+2021-12-15T15:39:20.6508617Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-pmml-bom ---
+2021-12-15T15:39:20.6514250Z [INFO] 
+2021-12-15T15:39:20.6537654Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-pmml-bom ---
+2021-12-15T15:39:20.6542991Z [INFO] 
+2021-12-15T15:39:20.6564143Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-pmml-bom ---
+2021-12-15T15:39:20.6571304Z [INFO] 
+2021-12-15T15:39:20.6594372Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-pmml-bom ---
+2021-12-15T15:39:20.6610092Z [INFO] 
+2021-12-15T15:39:20.6648108Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-pmml-bom ---
+2021-12-15T15:39:20.6651207Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-pmml-bom/pom.xml to /home/runner/.m2/repository/org/kie/kie-pmml-bom/7.64.0-SNAPSHOT/kie-pmml-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.6653079Z [INFO] 
+2021-12-15T15:39:20.6673997Z [INFO] ------------------< org.kie:narayana-integration-bom >------------------
+2021-12-15T15:39:20.6712211Z [INFO] Building Narayana Integration BOM (Bill Of Materials) 7.64.0-SNAPSHOT [12/14]
+2021-12-15T15:39:20.6713651Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.6714439Z [INFO] 
+2021-12-15T15:39:20.6715714Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ narayana-integration-bom ---
+2021-12-15T15:39:20.6716777Z [INFO] 
+2021-12-15T15:39:20.6718646Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ narayana-integration-bom ---
+2021-12-15T15:39:20.6727914Z [INFO] 
+2021-12-15T15:39:20.6775537Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ narayana-integration-bom ---
+2021-12-15T15:39:20.6780427Z [INFO] 
+2021-12-15T15:39:20.6821517Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ narayana-integration-bom ---
+2021-12-15T15:39:20.6822826Z [INFO] 
+2021-12-15T15:39:20.6824198Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ narayana-integration-bom ---
+2021-12-15T15:39:20.6825535Z [INFO] 
+2021-12-15T15:39:20.6826849Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ narayana-integration-bom ---
+2021-12-15T15:39:20.6934740Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/narayana-integration-bom/pom.xml to /home/runner/.m2/repository/org/kie/narayana-integration-bom/7.64.0-SNAPSHOT/narayana-integration-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.6937138Z [INFO] 
+2021-12-15T15:39:20.6938162Z [INFO] ----------------------< org.kie:kie-platform-bom >----------------------
+2021-12-15T15:39:20.6939460Z [INFO] Building KIE (Drools, jBPM, OptaPlanner) Platform BOM 7.64.0-SNAPSHOT [13/14]
+2021-12-15T15:39:20.6940675Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:20.6941392Z [INFO] 
+2021-12-15T15:39:20.6942827Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-platform-bom ---
+2021-12-15T15:39:20.6943718Z [INFO] 
+2021-12-15T15:39:20.6964783Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-java-version) @ kie-platform-bom ---
+2021-12-15T15:39:20.6973654Z [INFO] 
+2021-12-15T15:39:20.7002914Z [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ kie-platform-bom ---
+2021-12-15T15:39:20.7008301Z [INFO] 
+2021-12-15T15:39:20.7054763Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-platform-bom ---
+2021-12-15T15:39:20.7055969Z [INFO] 
+2021-12-15T15:39:20.7057244Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-platform-bom ---
+2021-12-15T15:39:20.7058266Z [INFO] 
+2021-12-15T15:39:20.7059493Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-platform-bom ---
+2021-12-15T15:39:20.7208657Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/kie-platform-bom/pom.xml to /home/runner/.m2/repository/org/kie/kie-platform-bom/7.64.0-SNAPSHOT/kie-platform-bom-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:20.7211233Z [INFO] 
+2021-12-15T15:39:20.7212884Z [INFO] -------------------------< org.kie:kie-parent >-------------------------
+2021-12-15T15:39:20.7214060Z [INFO] Building KIE (Drools, jBPM, OptaPlanner) parent 7.64.0-SNAPSHOT  [14/14]
+2021-12-15T15:39:20.7215120Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-15T15:39:21.6325437Z [INFO] 
+2021-12-15T15:39:21.6327354Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-parent ---
+2021-12-15T15:39:21.6478326Z [INFO] 
+2021-12-15T15:39:21.6502407Z [INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-plugin-versions) @ kie-parent ---
+2021-12-15T15:39:25.6640031Z [INFO] 
+2021-12-15T15:39:25.6691152Z [INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (ban-blacklisted-dependencies) @ kie-parent ---
+2021-12-15T15:39:25.6892241Z [INFO] 
+2021-12-15T15:39:25.6894269Z [INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (ban-duplicated-classes) @ kie-parent ---
+2021-12-15T15:39:25.7533729Z [INFO] Adding ignore: module-info
+2021-12-15T15:39:25.7546408Z [INFO] Adding ignore: META-INF/versions/*/module-info
+2021-12-15T15:39:25.7560452Z [INFO] Adding ignore: org.xmlpull.v1.XmlPullParserException
+2021-12-15T15:39:25.7574009Z [INFO] Adding ignore: org.xmlpull.v1.XmlPullParser
+2021-12-15T15:39:25.7585370Z [INFO] Adding ignore: org.relaxng.datatype.*
+2021-12-15T15:39:25.7607425Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.XMLName
+2021-12-15T15:39:25.7621182Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.XMLInputStream
+2021-12-15T15:39:25.7623104Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.utils.NestedThrowable
+2021-12-15T15:39:25.7625144Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.utils.NestedThrowable$Util
+2021-12-15T15:39:25.7627134Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.XMLStreamException
+2021-12-15T15:39:25.7643316Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.ReferenceResolver
+2021-12-15T15:39:25.7645049Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.XMLEvent
+2021-12-15T15:39:25.7646479Z [INFO] Adding ignore: org.apache.xmlbeans.xml.stream.Location
+2021-12-15T15:39:25.7647694Z [INFO] Adding ignore: org.w3c.dom.ElementTraversal
+2021-12-15T15:39:25.7648714Z [INFO] Adding ignore: org.w3c.dom.UserDataHandler
+2021-12-15T15:39:25.7653474Z [INFO] Adding ignore: org.hornetq.utils.HornetQUtilBundle_$bundle
+2021-12-15T15:39:25.7663950Z [INFO] Adding ignore: org.hornetq.utils.HornetQUtilLogger_$logger
+2021-12-15T15:39:25.7665206Z [INFO] Adding ignore: net.jcip.annotations.*
+2021-12-15T15:39:25.7666489Z [INFO] Adding ignore: com.google.gwt.uibinder.rebind.UiBinderWriter
+2021-12-15T15:39:25.7668251Z [INFO] Adding ignore: com.google.gwt.uibinder.rebind.UiBinderGenerator
+2021-12-15T15:39:25.7669935Z [INFO] Adding ignore: module-info
+2021-12-15T15:39:25.7675742Z [INFO] Adding ignore: META-INF/versions/*
+2021-12-15T15:39:25.7684677Z [INFO] Adding ignore: org.eclipse.aether.*
+2021-12-15T15:39:25.7685602Z [INFO] Adding ignore: org.apache.maven.*
+2021-12-15T15:39:25.7686465Z [INFO] Adding ignore: org.codehaus.plexus.*
+2021-12-15T15:39:25.7687905Z [INFO] Adding ignore: org.infinispan.util.AbstractDelegatingConcurrentMap
+2021-12-15T15:39:25.7689655Z [INFO] Adding ignore: org.infinispan.util.AbstractDelegatingMap
+2021-12-15T15:39:25.7706700Z [INFO] Adding ignore: org.infinispan.util.AbstractDelegatingSet
+2021-12-15T15:39:25.7708624Z [INFO] Adding ignore: org.infinispan.util.AbstractDelegatingCollection
+2021-12-15T15:39:25.7710257Z [INFO] Adding ignore: org.apache.kafka.common.message.*
+2021-12-15T15:39:25.7711463Z [INFO] Adding ignore: org.apache.sshd.common.io.*
+2021-12-15T15:39:25.7712597Z [INFO] Adding ignore: org.apache.sshd.common.auth.*
+2021-12-15T15:39:25.7717432Z [INFO] Adding ignorable dependency: org.glassfish:jakarta.json:null
+2021-12-15T15:39:25.7732654Z [INFO]   Adding ignore: javax.json.*
+2021-12-15T15:39:25.7733760Z [INFO] Adding ignorable dependency: org.glassfish:jakarta.el:null
+2021-12-15T15:39:25.7734704Z [INFO]   Adding ignore: javax.el.*
+2021-12-15T15:39:25.7736218Z [INFO] Adding ignorable dependency: com.sun.activation:jakarta.activation:null
+2021-12-15T15:39:25.7737153Z [INFO]   Adding ignore: javax.activation.*
+2021-12-15T15:39:25.7745141Z [INFO] Adding ignorable dependency: com.sun.mail:jakarta.mail:null
+2021-12-15T15:39:25.7758836Z [INFO]   Adding ignore: javax.mail.*
+2021-12-15T15:39:25.7760087Z [INFO] Adding ignorable dependency: org.jboss.errai:errai-ioc:null
+2021-12-15T15:39:25.7761098Z [INFO]   Adding ignore: javax.inject.Provider
+2021-12-15T15:39:25.7762323Z [INFO] Adding ignorable dependency: org.jboss.errai:errai-javax-enterprise:null
+2021-12-15T15:39:25.7763167Z [INFO]   Adding ignore: *
+2021-12-15T15:39:25.7782687Z [INFO] Adding ignorable dependency: io.quarkus:quarkus-ide-launcher:null
+2021-12-15T15:39:25.7783496Z [INFO]   Adding ignore: *
+2021-12-15T15:39:25.7784314Z [INFO] Adding ignorable dependency: com.google.gwt:gwt-dev:jar
+2021-12-15T15:39:25.7784961Z [INFO]   Adding ignore: *
+2021-12-15T15:39:25.7785683Z [INFO] Adding ignorable dependency: org.elasticsearch:elasticsearch:null
+2021-12-15T15:39:25.7786670Z [INFO]   Adding ignore: org.joda.time.base.BaseDateTime
+2021-12-15T15:39:25.7797256Z [INFO] Adding ignorable dependency: org.kie:kie-dmn-feel-gwt:null
+2021-12-15T15:39:25.7809936Z [INFO]   Adding ignore: *
+2021-12-15T15:39:25.7811292Z [INFO] Adding ignorable dependency: org.dominokit:domino-slf4j-logger:null
+2021-12-15T15:39:25.7812123Z [INFO]   Adding ignore: org.slf4j.*
+2021-12-15T15:39:25.7813112Z [INFO] Adding ignorable dependency: org.antlr:antlr4gwt-runtime:null
+2021-12-15T15:39:25.7813918Z [INFO]   Adding ignore: org.antlr.v4.*
+2021-12-15T15:39:25.7824857Z [INFO] Adding ignorable dependency: org.antlr:antlr4gwt-annotations:null
+2021-12-15T15:39:25.7831665Z [INFO]   Adding ignore: org.antlr.v4.runtime.misc.*
+2021-12-15T15:39:25.7833043Z [INFO] Adding ignorable dependency: org.kie.server:kie-server-router-proxy:jar
+2021-12-15T15:39:25.7849073Z [INFO]   Adding ignore: org.jboss.logging.*
+2021-12-15T15:39:25.7849756Z [INFO]   Adding ignore: io.undertow.*
+2021-12-15T15:39:25.7850294Z [INFO]   Adding ignore: org.json.*
+2021-12-15T15:39:25.7850891Z [INFO]   Adding ignore: org.jboss.threads.*
+2021-12-15T15:39:25.7851621Z [INFO]   Adding ignore: org.xnio.*
+2021-12-15T15:39:25.7852149Z [INFO]   Adding ignore: org.wildfly.*
+2021-12-15T15:39:25.7852782Z [INFO]   Adding ignore: org.apache.commons.*
+2021-12-15T15:39:25.7872270Z [INFO] Adding ignorable dependency: org.wildfly.security:wildfly-elytron:jar
+2021-12-15T15:39:25.7873099Z [INFO]   Adding ignore: *
+2021-12-15T15:39:25.7873973Z [INFO] Adding ignorable dependency: io.fabric8:openshift-client:jar
+2021-12-15T15:39:25.7875097Z [INFO]   Adding ignore: io.fabric8.kubernetes.client.ConfigFluent
+2021-12-15T15:39:25.7876438Z [INFO]   Adding ignore: io.fabric8.kubernetes.client.ConfigBuilder
+2021-12-15T15:39:25.7902060Z [INFO]   Adding ignore: io.fabric8.kubernetes.client.ConfigFluentImpl
+2021-12-15T15:39:25.7904185Z [INFO] Adding ignorable dependency: io.sundr:sundr-codegen:null
+2021-12-15T15:39:25.7904837Z [INFO]   Adding ignore: *
+2021-12-15T15:39:25.8257006Z [INFO] 
+2021-12-15T15:39:25.8284995Z [INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (no-duplicate-declared-dependencies) @ kie-parent ---
+2021-12-15T15:39:25.8377874Z [INFO] 
+2021-12-15T15:39:25.8401821Z [INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java-version) @ kie-parent ---
+2021-12-15T15:39:26.0374877Z [INFO] 
+2021-12-15T15:39:26.0376733Z [INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ kie-parent ---
+2021-12-15T15:39:26.0377750Z [INFO] 
+2021-12-15T15:39:26.0379597Z [INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ kie-parent ---
+2021-12-15T15:39:29.9891876Z [INFO] 
+2021-12-15T15:39:29.9927589Z [INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (no-managed-deps) @ kie-parent ---
+2021-12-15T15:39:29.9951898Z [INFO] 
+2021-12-15T15:39:29.9957683Z [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ kie-parent ---
+2021-12-15T15:39:30.0642887Z [INFO] 
+2021-12-15T15:39:30.0645636Z [INFO] --- build-helper-maven-plugin:3.0.0:add-source (default) @ kie-parent ---
+2021-12-15T15:39:30.7096914Z [INFO] Source directory: /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/target/generated-sources/annotations added.
+2021-12-15T15:39:31.3537971Z [INFO] 
+2021-12-15T15:39:31.3540230Z [INFO] --- build-helper-maven-plugin:3.0.0:parse-version (default) @ kie-parent ---
+2021-12-15T15:39:31.3540987Z [INFO] 
+2021-12-15T15:39:31.3542083Z [INFO] >>> spotbugs-maven-plugin:3.1.8:check (spotbugs-check) > :spotbugs @ kie-parent >>>
+2021-12-15T15:39:31.3542861Z [INFO] 
+2021-12-15T15:39:31.3544417Z [INFO] --- spotbugs-maven-plugin:3.1.8:spotbugs (spotbugs) @ kie-parent ---
+2021-12-15T15:39:36.5086716Z [INFO] 
+2021-12-15T15:39:36.5121292Z [INFO] <<< spotbugs-maven-plugin:3.1.8:check (spotbugs-check) < :spotbugs @ kie-parent <<<
+2021-12-15T15:39:36.5126585Z [INFO] 
+2021-12-15T15:39:36.5131776Z [INFO] 
+2021-12-15T15:39:36.5156437Z [INFO] --- spotbugs-maven-plugin:3.1.8:check (spotbugs-check) @ kie-parent ---
+2021-12-15T15:39:36.5212150Z [INFO] 
+2021-12-15T15:39:36.5244423Z [INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ kie-parent ---
+2021-12-15T15:39:36.5927360Z [INFO] 
+2021-12-15T15:39:36.5964037Z [INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (attach-test-sources) @ kie-parent ---
+2021-12-15T15:39:36.5977655Z [INFO] 
+2021-12-15T15:39:36.6006082Z [INFO] --- maven-jar-plugin:3.1.0:test-jar (test-jar) @ kie-parent ---
+2021-12-15T15:39:36.6656290Z [INFO] Skipping packaging of the test-jar
+2021-12-15T15:39:36.6658974Z [INFO] 
+2021-12-15T15:39:36.6685071Z [INFO] --- maven-javadoc-plugin:3.0.1:jar (default) @ kie-parent ---
+2021-12-15T15:39:38.0365277Z [INFO] Not executing Javadoc as the project is not a Java classpath-capable package
+2021-12-15T15:39:38.0369360Z [INFO] 
+2021-12-15T15:39:38.0399596Z [INFO] --- maven-failsafe-plugin:2.22.1:integration-test (default) @ kie-parent ---
+2021-12-15T15:39:38.8710886Z [INFO] No tests to run.
+2021-12-15T15:39:38.8814260Z [INFO] 
+2021-12-15T15:39:38.8816222Z [INFO] --- maven-failsafe-plugin:2.22.1:verify (default) @ kie-parent ---
+2021-12-15T15:39:38.8826098Z [INFO] Failsafe report directory: /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/target/failsafe-reports
+2021-12-15T15:39:38.9205721Z [INFO] 
+2021-12-15T15:39:38.9207637Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-parent ---
+2021-12-15T15:39:38.9712606Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_droolsjbpm_build_bootstrap/pom.xml to /home/runner/.m2/repository/org/kie/kie-parent/7.64.0-SNAPSHOT/kie-parent-7.64.0-SNAPSHOT.pom
+2021-12-15T15:39:38.9755215Z [INFO] ------------------------------------------------------------------------
+2021-12-15T15:39:38.9785928Z [INFO] Reactor Summary for KIE (Drools, jBPM, OptaPlanner) parent 7.64.0-SNAPSHOT:
+2021-12-15T15:39:38.9790179Z [INFO] 
+2021-12-15T15:39:38.9820997Z [INFO] KIE (Drools, jBPM, OptaPlanner) user BOM parent .... SUCCESS [  6.893 s]
+2021-12-15T15:39:38.9822368Z [INFO] KIE :: Build tools ................................. SUCCESS [  2.841 s]
+2021-12-15T15:39:38.9823271Z [INFO] KIE BOM (Bill Of Materials) ........................ SUCCESS [  0.033 s]
+2021-12-15T15:39:38.9824168Z [INFO] KIE Soup BOM (Bill Of Materials) ................... SUCCESS [  0.027 s]
+2021-12-15T15:39:38.9838774Z [INFO] UberFire BOM (Bill Of Materials) ................... SUCCESS [  0.032 s]
+2021-12-15T15:39:38.9842061Z [INFO] Drools BOM (Bill Of Materials) ..................... SUCCESS [  0.046 s]
+2021-12-15T15:39:38.9844714Z [INFO] OptaPlanner BOM (Bill Of Materials) ................ SUCCESS [  0.022 s]
+2021-12-15T15:39:38.9847349Z [INFO] jBPM BOM (Bill Of Materials) ....................... SUCCESS [  0.027 s]
+2021-12-15T15:39:38.9850016Z [INFO] UberFire Extensions BOM (Bill Of Materials) ........ SUCCESS [  0.028 s]
+2021-12-15T15:39:38.9852592Z [INFO] Kie DMN BOM (Bill Of Materials) .................... SUCCESS [  0.019 s]
+2021-12-15T15:39:38.9855175Z [INFO] Kie PMML BOM (Bill Of Materials) ................... SUCCESS [  0.019 s]
+2021-12-15T15:39:38.9857815Z [INFO] Narayana Integration BOM (Bill Of Materials) ....... SUCCESS [  0.025 s]
+2021-12-15T15:39:38.9860240Z [INFO] KIE (Drools, jBPM, OptaPlanner) Platform BOM ....... SUCCESS [  0.022 s]
+2021-12-15T15:39:38.9862903Z [INFO] KIE (Drools, jBPM, OptaPlanner) parent ............. SUCCESS [ 18.263 s]
+2021-12-15T15:39:38.9865726Z [INFO] ------------------------------------------------------------------------
+2021-12-15T15:39:38.9868194Z [INFO] BUILD SUCCESS
+2021-12-15T15:39:38.9869874Z [INFO] ------------------------------------------------------------------------
+2021-12-15T15:39:38.9875579Z [INFO] Total time:  37.321 s
+2021-12-15T15:39:38.9876792Z [INFO] Finished at: 2021-12-15T15:39:38Z
+2021-12-15T15:39:38.9879464Z [INFO] ------------------------------------------------------------------------
+2021-12-15T15:39:38.9888385Z [WARNING] The requested profile "wildfly" could not be activated because it does not exist.
+2021-12-15T15:39:38.9892211Z [WARNING] The requested profile "run-code-coverage" could not be activated because it does not exist.
+2021-12-15T15:39:39.0109509Z ##[notice]mvn -e -nsu -Dfull -Pwildfly clean install -Prun-code-coverage  -Dcontainer.profile=wildfly -Dcontainer=wildfly -Dintegration-tests=true -Dmaven.test.failure.ignore=true -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3 -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn -B
+2021-12-15T15:39:39.0117037Z ##[endgroup]
+2021-12-15T15:39:39.0118562Z ##[group][Pull Request Flow] Archiving artifacts...
+2021-12-15T15:39:39.0119424Z [INFO]  No artifacts to archive
+2021-12-15T15:39:39.0135331Z [INFO]  -------------- ARCHIVE ARTIFACTS SUMMARY --------------
+2021-12-15T15:39:39.0136637Z [INFO]  Artifacts uploaded (0): . Files (0): 
+2021-12-15T15:39:39.0137276Z [INFO]  Artifacts failed (0): . Files (0): 
+2021-12-15T15:39:39.0138642Z ##[endgroup]
+2021-12-15T15:39:39.0139836Z ##[group][Pull Request Flow] Execution Summary...
+2021-12-15T15:39:39.0140962Z [INFO]  ----------------------------------------------
+2021-12-15T15:39:39.0142097Z [INFO]  [kiegroup/droolsjbpm-build-bootstrap]. Execution Result: ok. Time: 39.5s (39512 ms)
+2021-12-15T15:39:39.0143183Z [INFO]  ----------------------------------------------

@@ -1,6 +1,6 @@
 {
   "name": "treat-maven-dependency-plugin-log",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "it solves the problem of consuming maven-dependency-plugin log information from multiple modules",
   "repository": {
     "type": "git",
@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "argparse": "^2.0.1",
+    "commander": "^8.3.0",
     "dotenv": "^8.2.0",
     "fs-extra": "^9.0.0",
     "js-yaml": "^3.14.0",

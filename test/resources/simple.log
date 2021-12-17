@@ -1,50 +1,49 @@
-2021-12-16T18:41:36.6301864Z [INFO] Tests are skipped.
-2021-12-16T18:41:36.6303192Z [INFO] 
-2021-12-16T18:41:36.6306163Z [INFO] --- maven-failsafe-plugin:2.22.1:verify (default) @ kie-soup-parent ---
-2021-12-16T18:41:36.6313639Z [INFO] Tests are skipped.
-2021-12-16T18:41:36.6316498Z [INFO] 
-2021-12-16T18:41:36.6318076Z [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-soup-parent ---
-2021-12-16T18:41:36.6722643Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_kie_soup/pom.xml to /home/runner/.m2/repository/org/kie/soup/kie-soup-parent/7.64.0-SNAPSHOT/kie-soup-parent-7.64.0-SNAPSHOT.pom
-2021-12-16T18:41:36.6921843Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_kie_soup/target/kie-soup-parent-7.64.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/kie/soup/kie-soup-parent/7.64.0-SNAPSHOT/kie-soup-parent-7.64.0-SNAPSHOT-tests.jar
-2021-12-16T18:41:36.6941446Z [INFO] 
-2021-12-16T18:41:36.6943169Z [INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ kie-soup-parent ---
-2021-12-16T18:41:36.9480045Z [INFO] org.kie.soup:kie-soup-parent:pom:7.64.0-SNAPSHOT
-2021-12-16T18:41:36.9481695Z [INFO] +- junit:junit:jar:4.13.1:test
-2021-12-16T18:41:36.9483028Z [INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
-2021-12-16T18:41:36.9484305Z [INFO] \- org.mockito:mockito-core:jar:3.6.0:test
-2021-12-16T18:41:36.9485587Z [INFO]    +- net.bytebuddy:byte-buddy:jar:1.10.3:test
-2021-12-16T18:41:36.9486915Z [INFO]    +- net.bytebuddy:byte-buddy-agent:jar:1.10.15:test
-2021-12-16T18:41:36.9488256Z [INFO]    \- org.objenesis:objenesis:jar:3.1:test
-2021-12-16T18:41:36.9491362Z [INFO] 
-2021-12-16T18:41:36.9492885Z [INFO] -------------------< org.kie.soup:kie-soup-commons >--------------------
-2021-12-16T18:41:36.9494776Z [INFO] Building KIE Soup Commons 7.64.0-SNAPSHOT                         [2/20]
-2021-12-16T18:41:36.9496140Z [INFO] -------------------------------[ bundle ]-------------------------------
-2021-12-16T18:41:39.1218397Z [INFO] 
-2021-12-16T18:41:39.1225228Z [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-soup-commons ---
-
-2021-12-16T18:41:55.2643782Z [INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_kie_soup/kie-soup-commons/target/kie-soup-commons-7.64.0-SNAPSHOT-javadoc.jar to /home/runner/.m2/repository/org/kie/soup/kie-soup-commons/7.64.0-SNAPSHOT/kie-soup-commons-7.64.0-SNAPSHOT-javadoc.jar
-2021-12-16T18:41:55.2646740Z [INFO] 
-2021-12-16T18:41:55.2647999Z [INFO] --- maven-bundle-plugin:3.5.0:install (default-install) @ kie-soup-commons ---
-2021-12-16T18:41:55.2649397Z [INFO] Local OBR update disabled (enable with -DobrRepository)
-2021-12-16T18:41:55.2650104Z [INFO] 
-2021-12-16T18:41:55.2679332Z [INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ kie-soup-commons ---
-2021-12-16T18:41:55.5001290Z [INFO] org.kie.soup:kie-soup-commons:bundle:7.64.0-SNAPSHOT
-2021-12-16T18:41:55.5036829Z [INFO] +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:provided
-2021-12-16T18:41:55.5063914Z [INFO] |  +- jakarta.el:jakarta.el-api:jar:3.0.3:provided
-2021-12-16T18:41:55.5100375Z [INFO] |  +- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:provided
-2021-12-16T18:41:55.5102000Z [INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:provided
-2021-12-16T18:41:55.5103534Z [INFO] |  |  \- jakarta.ejb:jakarta.ejb-api:jar:3.2.6:provided
-2021-12-16T18:41:55.5105056Z [INFO] |  |     \- jakarta.transaction:jakarta.transaction-api:jar:1.3.3:provided
-2021-12-16T18:41:55.5117730Z [INFO] |  \- jakarta.inject:jakarta.inject-api:jar:1.0.3:provided
-2021-12-16T18:41:55.5137518Z [INFO] +- org.slf4j:slf4j-api:jar:1.7.30:compile
-2021-12-16T18:41:55.5138550Z [INFO] +- junit:junit:jar:4.13.1:test
-2021-12-16T18:41:55.5139583Z [INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
-2021-12-16T18:41:55.5140700Z [INFO] +- org.assertj:assertj-core:jar:3.14.0:test
-2021-12-16T18:41:55.5141756Z [INFO] \- org.mockito:mockito-core:jar:3.6.0:test
-2021-12-16T18:41:55.5142833Z [INFO]    +- net.bytebuddy:byte-buddy:jar:1.10.3:test
-2021-12-16T18:41:55.5169950Z [INFO]    +- net.bytebuddy:byte-buddy-agent:jar:1.10.15:test
-2021-12-16T18:41:55.5170953Z [INFO]    \- org.objenesis:objenesis:jar:3.1:test
-2021-12-16T18:41:55.5171480Z [INFO] 
-2021-12-16T18:41:55.5172555Z [INFO] -------------------< org.kie.soup:kie-soup-xstream >--------------------
-2021-12-16T18:41:55.5174975Z [INFO] Building KIE Soup XStream 7.64.0-SNAPSHOT                         [3/20]
-2021-12-16T18:41:55.5191003Z [INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.1:verify (default) @ kie-soup-parent ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ kie-soup-parent ---
+[INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_kie_soup/pom.xml to /home/runner/.m2/repository/org/kie/soup/kie-soup-parent/7.64.0-SNAPSHOT/kie-soup-parent-7.64.0-SNAPSHOT.pom
+[INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_kie_soup/target/kie-soup-parent-7.64.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/kie/soup/kie-soup-parent/7.64.0-SNAPSHOT/kie-soup-parent-7.64.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ kie-soup-parent ---
+[INFO] org.kie.soup:kie-soup-parent:pom:7.64.0-SNAPSHOT
+[INFO] +- junit:junit:jar:4.13.1:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] \- org.mockito:mockito-core:jar:3.6.0:test
+[INFO]    +- net.bytebuddy:byte-buddy:jar:1.10.3:test
+[INFO]    +- net.bytebuddy:byte-buddy-agent:jar:1.10.15:test
+[INFO]    \- org.objenesis:objenesis:jar:3.1:test
+[INFO] 
+[INFO] -------------------< org.kie.soup:kie-soup-commons >--------------------
+[INFO] Building KIE Soup Commons 7.64.0-SNAPSHOT                         [2/20]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ kie-soup-commons ---
+[INFO] Installing /home/runner/work/droolsjbpm-build-bootstrap/droolsjbpm-build-bootstrap/kiegroup_kie_soup/kie-soup-commons/target/kie-soup-commons-7.64.0-SNAPSHOT-javadoc.jar to /home/runner/.m2/repository/org/kie/soup/kie-soup-commons/7.64.0-SNAPSHOT/kie-soup-commons-7.64.0-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:install (default-install) @ kie-soup-commons ---
+[INFO] Local OBR update disabled (enable with -DobrRepository)
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ kie-soup-commons ---
+[INFO] org.kie.soup:kie-soup-commons:bundle:7.64.0-SNAPSHOT
+[INFO] +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:provided
+[INFO] |  +- jakarta.el:jakarta.el-api:jar:3.0.3:provided
+[INFO] |  +- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:provided
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:provided
+[INFO] |  |  \- jakarta.ejb:jakarta.ejb-api:jar:3.2.6:provided
+[INFO] |  |     \- jakarta.transaction:jakarta.transaction-api:jar:1.3.3:provided
+[INFO] |  \- jakarta.inject:jakarta.inject-api:jar:1.0.3:provided
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.30:compile
+[INFO] +- junit:junit:jar:4.13.1:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.assertj:assertj-core:jar:3.14.0:test
+[INFO] \- org.mockito:mockito-core:jar:3.6.0:test
+[INFO]    +- net.bytebuddy:byte-buddy:jar:1.10.3:test
+[INFO]    +- net.bytebuddy:byte-buddy-agent:jar:1.10.15:test
+[INFO]    \- org.objenesis:objenesis:jar:3.1:test
+[INFO] 
+[INFO] -------------------< org.kie.soup:kie-soup-xstream >--------------------
+[INFO] Building KIE Soup XStream 7.64.0-SNAPSHOT                         [3/20]
+[INFO] -------------------------------[ bundle ]-------------------------------
