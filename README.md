@@ -59,4 +59,5 @@ being `<filePath>` and absoloute or relative path to the maven log file where th
 - `-f, --filter <regex...>`: The regex list to filter just the modules' dependency:tree matching with the regex. For instance `-f validator-api:\d` will filter just the modules where the dependency tree matches `validator-api:\d` regular expression.
 - `-e, --exclude <regex...>`: The regex list to exclude the modules' dependency:tree matching with the regex. For instance `-e validator-api:\d` will exclude all the modules where the dependency tree matches `validator-api:\d` regular expression.
 - `--skip-output`: Will skip output to be writen on any file. This invalidates the `-o` argument.
-- `-p ,--print-module-list`: It will print a summary of module lists matching the requirements from execution.
+- `-p ,--print-module-list`: It will print out a summary of module lists matching the requirements from execution.
+- `-a ,--artifacts <dependency identifier...>`: It will print out spefici artifact information like at which level and which modules this artifact appear.

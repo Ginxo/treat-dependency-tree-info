@@ -1,9 +1,10 @@
 const fs = require("fs");
 
-function getDependencyTreeObject(logContent) {
+function getDependencyTreeObject(
+  logContent,
+  regex = /(?<=maven-dependency-plugin:\d\.\d\.\d:tree \(default-cli\) )(@ (.*) ---)([^<]+(.*)\\-.*)/gm
+) {
   const result = [];
-  const regex =
-    /(?<=maven-dependency-plugin:\d\.\d\.\d:tree \(default-cli\) )(@ (.*) ---)([^<]+(.*))(\[INFO\] [-]*)(?=<?)/gm;
   let match;
   while ((match = regex.exec(logContent)) !== null && match.length > 3) {
     result.push({ moduleId: match[2], info: match[3] });

@@ -15,12 +15,17 @@ function getArgumentsObject() {
     .option("--skip-output", "To skip the file writing.")
     .option(
       "-f, --filter <regex...>",
-      "The regex to filter just the modules' dependency:tree matching with the regex.",
+      "The regex list to filter just the modules' dependency:tree matching with the regex.",
       undefined
     )
     .option(
       "-e, --exclude <regex...>",
-      "The regex to exclude the modules' dependency:tree matching with the regex.",
+      "The regex list to exclude the modules' dependency:tree matching with the regex.",
+      undefined
+    )
+    .option(
+      "-a, --artifacts <dependency identifier...>",
+      "The dependency identifier list to get information from. It can be groupId, groupId:artifactId, groupId:artifactId:classifier, groupId:artifactId:classifier:version and all the combitations of them.",
       undefined
     )
     .option(
