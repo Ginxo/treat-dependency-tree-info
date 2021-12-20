@@ -44,6 +44,20 @@
 [INFO]    +- net.bytebuddy:byte-buddy-agent:jar:1.10.15:test
 [INFO]    \- org.objenesis:objenesis:jar:3.1:test
 [INFO] 
-[INFO] -------------------< org.kie.soup:kie-soup-xstream >--------------------
-[INFO] Building KIE Soup XStream 7.64.0-SNAPSHOT                         [3/20]
-[INFO] -------------------------------[ bundle ]-------------------------------
+2021-12-16T18:41:11.6761977Z [INFO] ---------------------< org.kie.soup:kie-soup-bom >----------------------
+2021-12-16T18:41:11.6763492Z [INFO] Building KIE Soup BOM (Bill Of Materials) 7.64.0-SNAPSHOT         [4/14]
+2021-12-16T18:41:11.6764746Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-16T18:41:11.6816566Z [INFO] 
+2021-12-16T18:41:11.6913092Z [INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ kie-soup-bom ---
+2021-12-16T18:41:11.6921005Z [INFO] org.kie.soup:kie-soup-bom:pom:7.64.0-SNAPSHOT
+2021-12-16T18:41:11.6923817Z [INFO] 
+2021-12-16T18:41:11.6928948Z [INFO] ---------------------< org.uberfire:uberfire-bom >----------------------
+2021-12-16T18:41:11.6934806Z [INFO] Building UberFire BOM (Bill Of Materials) 7.64.0-SNAPSHOT         [5/14]
+2021-12-16T18:41:11.6937632Z [INFO] --------------------------------[ pom ]---------------------------------
+2021-12-16T18:41:11.6816566Z [INFO] 
+2021-12-16T18:41:11.6913092Z [INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ kie-soup-bom2 ---
+2021-12-16T18:41:11.6921005Z [INFO] org.kie.soup:kie-soup-bom:pom:7.64.0-SNAPSHOT
+2021-12-16T18:41:11.6923817Z [INFO] 
+2021-12-16T18:41:11.6928948Z [INFO] ---------------------< org.uberfire:uberfire-bom >----------------------
+2021-12-16T18:41:11.6934806Z [INFO] Building UberFire BOM (Bill Of Materials) 7.64.0-SNAPSHOT         [5/14]
+2021-12-16T18:41:11.6937632Z [INFO] --------------------------------[ pom ]---------------------------------

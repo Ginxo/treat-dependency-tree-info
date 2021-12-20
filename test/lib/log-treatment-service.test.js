@@ -92,7 +92,7 @@ describe("getDependencyTreeObject", () => {
     const result = getDependencyTreeObject(logContent);
 
     // Assert
-    expect(result.length).toBe(762);
+    expect(result.length).toBe(749);
   });
 
   test("empty", async () => {

@@ -1,5 +1,12 @@
 # Changelog
 
+# 0.3.0
+
+## Enhancements:
+
+- maven dependency tree regex improved
+- -a, --artifacts argument functionallity
+
 # 0.2.0
 
 ## Enhancements:

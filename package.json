@@ -1,6 +1,6 @@
 {
   "name": "treat-maven-dependency-plugin-log",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "it solves the problem of consuming maven-dependency-plugin tree log information from multiple modules",
   "repository": {
     "type": "git",
@@ -68,6 +68,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "git-pre-hooks": "^1.2.1",
     "jest": "^25.5.1",
+    "jest-expect-message": "^1.0.2",
     "prettier": "^2.0.5"
   },
   "jest": {

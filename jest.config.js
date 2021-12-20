@@ -1,3 +1,4 @@
 module.exports = {
-  setupFiles: ["dotenv/config"]
+  setupFiles: ["dotenv/config"],
+  setupFilesAfterEnv: ["jest-expect-message"]
 };
