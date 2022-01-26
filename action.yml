@@ -1,0 +1,35 @@
+name: "Treat maven dependency plugin log"
+author: "Roberto Oliveira <rguimara@redhat.com>"
+description: Treat maven dependency plugin log helps solving the problem of consuming maven-dependency-plugin information from multiple modules.
+
+inputs:
+  log-file-path:
+    description: "The maven log file path."
+    required: true
+  output-file:
+    description: "The file path to write the output information from the execution. Otherwise it will be 'original file's base name_output.info'."
+    required: false
+  skip-output:
+    description: "To skip the file writing."
+    required: false
+  filter:
+    description: "The regex list to filter just the modules dependency:tree matching with the regex."
+    required: false
+  exclude:
+    description: "The regex list to exclude the modules dependency:tree matching with the regex."
+    required: false
+  artifacts:
+    description: "The dependency identifier list to get information from. It can be groupId, groupId:artifactId, groupId:artifactId:classifier, groupId:artifactId:classifier:version and all the combinations of them."
+    required: false
+  print-module-list:
+    description: "It will print a summary of module lists matching the requirements from execution."
+    required: false
+  logger-level:
+    description: "Use 'debug' to enable debug logging mode."
+    required: false
+runs:
+  using: "node12"
+  main: "dist/index.js"
+branding:
+  icon: "box"
+  color: "red"

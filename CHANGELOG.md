@@ -1,5 +1,11 @@
 # Changelog
 
+# 0.4.0
+
+## Enhancements:
+
+- add github action tool functionallity
+
 # 0.3.0
 
 ## Enhancements:
