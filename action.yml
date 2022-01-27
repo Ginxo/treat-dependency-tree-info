@@ -10,8 +10,9 @@ inputs:
     description: "The file path to write the output information from the execution. Otherwise it will be 'original file's base name_output.info'."
     required: false
   skip-output:
-    description: "To skip the file writing."
+    description: "Use 'true' to skip the file writing."
     required: false
+    default: false
   filter:
     description: "The regex list to filter just the modules dependency:tree matching with the regex."
     required: false
@@ -22,8 +23,9 @@ inputs:
     description: "The dependency identifier list to get information from. It can be groupId, groupId:artifactId, groupId:artifactId:classifier, groupId:artifactId:classifier:version and all the combinations of them."
     required: false
   print-module-list:
-    description: "It will print a summary of module lists matching the requirements from execution."
+    description: "Use 'true' to print a summary of module lists matching the requirements from execution."
     required: false
+    default: false
   logger-level:
     description: "Use 'debug' to enable debug logging mode."
     required: false
