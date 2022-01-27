@@ -45,14 +45,15 @@ describe("start", () => {
 
   test("all inputs", () => {
     // Arrange
-    getInput.mockReturnValueOnce("log-file-path");
-    getInput.mockReturnValueOnce("output-file");
-    getInput.mockReturnValueOnce(true);
-    getInput.mockReturnValueOnce("filter");
-    getInput.mockReturnValueOnce("exclude");
-    getInput.mockReturnValueOnce("artifacts");
-    getInput.mockReturnValueOnce(false);
-    getInput.mockReturnValueOnce("debug");
+    getInput
+      .mockReturnValueOnce("log-file-path")
+      .mockReturnValueOnce("output-file")
+      .mockReturnValueOnce("true")
+      .mockReturnValueOnce("filter")
+      .mockReturnValueOnce("exclude")
+      .mockReturnValueOnce("artifacts")
+      .mockReturnValueOnce("false")
+      .mockReturnValueOnce("debug");
 
     //Act
     start();

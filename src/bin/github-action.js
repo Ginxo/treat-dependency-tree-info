@@ -6,11 +6,11 @@ const start = () => {
   const args = {
     logFilePath: core.getInput("log-file-path"),
     outputFile: core.getInput("output-file"),
-    skipOutput: Boolean(core.getInput("skip-output")),
+    skipOutput: "true" === core.getInput("skip-output"),
     filter: core.getInput("filter"),
     exclude: core.getInput("exclude"),
     artifacts: core.getInput("artifacts"),
-    printModuleList: Boolean(core.getInput("print-module-list")),
+    printModuleList: "true" === core.getInput("print-module-list"),
     debug: core.getInput("logger-level") === "debug"
   };
   main(args);
