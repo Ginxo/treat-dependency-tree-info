@@ -1,4 +1,3 @@
-//#!/usr/bin/env node
 const path = require("path");
 
 const {
@@ -57,7 +56,4 @@ function main(args) {
   );
 }
 
-if (require.main === module) {
-  main();
-}
 module.exports = { main };
