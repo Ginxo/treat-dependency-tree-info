@@ -61,3 +61,41 @@ being `<filePath>` and absolute or relative path to the maven log file where the
 - `--skip-output`: Will skip output to be written on any file. This invalidates the `-o` argument.
 - `-p ,--print-module-list`: It will print out a summary of module lists matching the requirements from execution.
 - `-a ,--artifacts <dependency identifier...>`: It will print out specific artifact information like at which level and which modules this artifact appear.
+
+## Using the tool as a GitHub action
+
+You can use this tool as a GitHub action in your GitHub workflow. See the following example showing how this can be done
+
+```
+name: Java CI with Maven and treat maven dependency plugin
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml dependency:tree -l ./my-log.log
+    - name: Check log
+      uses: Ginxo/treat-maven-dependency-plugin-log
+      with:
+        log-file-path: './my-log.log'
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: dependency-log
+        path: |
+          my-log.log
+```
