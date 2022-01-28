@@ -1,6 +1,6 @@
 {
   "name": "treat-maven-dependency-plugin-log",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "it solves the problem of consuming maven-dependency-plugin tree log information from multiple modules",
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   ],
   "main": "src/bin/cli.js",
   "author": "Enrique Mingorance Cano <emingora@redhat.com>",
+  "contributors": [
+    "Roberto Oliveira <rguimara@redhat.com>"
+  ],
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/Ginxo/treat-maven-dependency-plugin-log/issues"
@@ -28,7 +31,7 @@
   "homepage": "https://github.com/Ginxo/treat-maven-dependency-plugin-log#readme",
   "private": false,
   "bin": {
-    "treat-maven-dependency-plugin-log": "dist/index.js"
+    "treat-maven-dependency-plugin-log": "src/bin/cli.js"
   },
   "scripts": {
     "test": "jest",
@@ -38,13 +41,14 @@
     "prettier-write": "prettier --write .",
     "lint-final": "npm run prettier && npm run lint",
     "prepublish": "npm run lint && npm run test",
-    "ncc-build": "ncc build --minify src/bin/cli.js"
+    "ncc-build": "ncc build --minify src/bin/github-action.js"
   },
   "git-pre-hooks": {
     "pre-commit": "npm run lint && npm run prettier && npm run ncc-build && git add dist/index.js",
     "pre-push": "npm ci"
   },
   "dependencies": {
+    "@actions/core": "^1.6.0",
     "argparse": "^2.0.1",
     "commander": "^8.3.0",
     "dotenv": "^8.2.0",
